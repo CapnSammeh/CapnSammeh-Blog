@@ -1,7 +1,7 @@
 ---
 title: "Deploying Hugo via Netlify"
 date: 2019-02-19T16:23:32+10:00
-draft: true
+draft: false
 ---
 
 Hugo is a fantastic way to quickly deploy a themed website; but unfortunately the guides to hosting a Hugo-Driven Site (in my person case, *this blog*) are either out of date, or a little too vague to follow along with without an in-depth understanding of both Hugo and Netlify.
@@ -68,4 +68,6 @@ I personally went the route of PowerShell to do this:
 
 This will create a new, 0kb file in each directory underneath your current directory (which should still be the root of the Repo) called .gitkeep. This isn't really a part of Git, but is good practice and a widely adopted method for maintaining empty directories in Git Repositories. 
 
-Once you've created the required files, you can make your intial push up to GitHub.
+Once you've created the required files, you can make your initial push up to GitHub.
+
+## Linking GitHub and Netlify
