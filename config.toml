@@ -9,6 +9,6 @@ theme = "m10c"
   [[params.social]]
     name = "github"
     url = "https://github.com/CapnSammeh"
-  [[params.social]
+  [[params.social]]
     name =  "DigiCard"
-    url = "http://samherring.glitch.me/" 
+    url = "http://samherring.glitch.me/"
