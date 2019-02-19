@@ -1,11 +1,11 @@
 baseURL = "/"
 languageCode = "en-us"
-title = "Capn's Log"
+title = "The Capn's Log"
 theme = "m10c"
 
 [params]
   author = "CapnSammeh"
-  description = "A dev blog designed to help me be a better developer and writer. Come along for the ride."
+  description = "A dev blog designed to help me be a better developer and writer. \nCome along for the ride."
   [[params.social]]
     name = "github"
     url = "https://github.com/CapnSammeh"
