@@ -108,11 +108,77 @@ Once completed, push your changes up to the Repo.
 
 ## Creating Netlify.TOML 
 
+Netlify has this [wonderfully documented](https://www.netlify.com/docs/netlify-toml-reference/) .TOML File (aptly named *netlify.toml*) that allows you to configure the way that Netlify will build and deploy your site.
+
+Because we're using Hugo to build the site, Netlify needs to be provided with some information on how it should build the contents of your Repo into a fully-fledged Hugo-Driven Site. 
+
+Create a new file in the root of your project called *netlify.toml*; within this file, put the following lines of markup:
+
+```
+[build]
+publish = "public"
+command = "hugo --gc --minify"
+
+[context.production.environment]
+HUGO_VERSION = "0.54.0"
+```
+
+To explain:
+
+```
+[build]
+```
+
+Settings listed under the build context are global, and are applied to all contexts unless otherwised specified.
+
+Basically, this means that unless you specify a context (like Production or Development), these settings will be used throughout your deployment for all deployment types. Because we're not really doing any staging of this site (Yet!), this is all we need for now.
+
+
+
+```
+publish = 'public'
+command = "hugo --gc --minify"
+```
+
+Provides Netlify with the build instructions; in this case, that includes publishing the output of the command to the 'Public' directory; this is pretty standard in Netlify-land. 
+
+
+
+Command is the exact command being used to build out the site; 
+
+​	--gc (Presumably Garbage-Clean) enables Hugo to run some cleanup activities to remove unused files after the build.
+
+​	--minify allows for minification support. For more information on Minification, see [here](https://gohugo.io/hugo-pipes/minification/) and [here](https://developers.google.com/speed/docs/insights/MinifyResources). 
+
+
+
+```toml
+[context.production.environment]
+HUGO_VERSION = "0.54.0"
+```
+
+The context declaration is largely unnecessary at this stage, but is nice to have for now for when we deploy a Development and Testing Branch of Hugo, potentially running previews of the newest build.
+
+The HUGO_VERSION line gives Netlify an idea as to what version of the application to pull and build in order to run our command. At the time of writing, the most stable release of Hugo is 0.54.0, hence the version number. 
+
+Once this file has been populated, feel free to push this to your repo.
 
 
 ## Making Changes to Config.TOML
 
+This one is a bit tough, as it's very dependent on the Theme that you're using, and what variables it's expecting. At the very least, your Config.TOML File (the file that Hugo uses for configuring your site), should contain the following fields:
 
+```toml
+baseURL = "/"
+languageCode = "en-us"
+title = "The Capn's Log"
+```
+
+Ensure the Language Code and Title are to your liking (the Title is the name of your site, and language code is pretty obvious). 
+
+**IMPORTANT: ** Make sure you set the baseURL of the site to "/"! This ensures that the URLs that are built using your theme point to the current site, providing you with the ability to change the Domain Name as required. 
+
+Once complete, push the newly created file to your repo. 
 
 ## Linking GitHub and Netlify
 
@@ -123,3 +189,13 @@ Click *New Site from GitHub* and select the Repo we've been working with. On the
 Pressing Deploy will start the build process and you should see that once it completes, you can navigate to the URL Netlify have provided you with and see your content **LIVE AND ONLINE**!
 
 ## Creating Content
+
+Creating Content in Hugo is a simple as pulling the newest version of the repo to your workspace of choosing; ensuring Hugo is pre-installed, and using Hugo in the directory to create a new post using the following command:
+
+```powershell
+hugo new posts/post_name.md
+```
+
+Once your .MD file has been created, using your Text Editor of choice (Atom is a great all-rounder, but Typora is an excellent Markdown Editor if you want something a bit cleaner), create your content!
+
+If you're happy to publish the file directly to the site, ensure that the file isn't in draft (Draft = False in the header of the page) and commit/push your changes. Netlify should see the change to your Repo and rebuild the site using your newly added content!
