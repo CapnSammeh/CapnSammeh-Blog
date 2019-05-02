@@ -3,7 +3,7 @@ title: "Managing Update Sets in ServiceNow"
 date: 2019-05-03T07:24:55+10:00
 draft: false
 ---
-# Managing Update Sets via Standardised Naming Conventions in ServiceNow
+# Managing Update Sets via Standardized Naming Conventions in ServiceNow
 ServiceNow uses [Update Sets](https://docs.servicenow.com/bundle/london-application-development/page/build/system-update-sets/concept/system-update-sets.html) in order to better manage the release/migration of changes throughout environments.
 
 In order to better identify the nature of the Change being applied, Developers and Administrators can leverage the usage of the following template when creating/populating an Update Set.
@@ -18,11 +18,11 @@ Update Sets should be created with the following core principals in mind:
 
 ### Update Sets are Feature/Solution Specific
 
-In order to mitigate the confusion that can easily arise from customisation/configuration within ServiceNow, creating specific update sets for features (or sub-features as the case may require) ensures that development works are adequately grouped and categorised, while also minimising the risk of migrating unintended changes between environments. 
+In order to mitigate the confusion that can easily arise from customization/configuration within ServiceNow, creating specific update sets for features (or sub-features as the case may require) ensures that development works are adequately grouped and categorized, while also minimizing the risk of migrating unintended changes between environments. 
 
 ### Complex Feature = Multiple Update Sets
 
-When developing a feature, or implementing a solution, consider the Update Sets that need to created and their relation to the deliverable/s. When creating or performing a change to a complex feature, perhaps it's better to break the Change into Multiple Update Sets; this provides Developers and Administrators with a high-level overview of the complexity of the feature (simply by viewing the number of Update Sets included in the feature), and with the ability to build upon configuration with confidence. 
+When developing a feature, or implementing a solution, consider the Update Sets that need to created and their relation to the deliverable/s. When creating or performing a change to a complex feature, perhaps it's better to break the Change into Multiple Update Sets; this provides Developers and Administrators with a high-level overview of the complexity of the feature (simply by viewing the number of Update Sets included in the feature), and with the ability to build upon configuration with confidence.
 
 ### Can this Update Set be *easily* reverted?
 
@@ -61,7 +61,7 @@ Changes:
 
 *Name: (ORG) REQ0172126 - AMS Connect 'New' Task Button Removal*
 
-*Description:* 
+*Description:*
 
 Adds the below roles to the 'New Button' List Control Group Condition for the Facilities_Request Table:
 
