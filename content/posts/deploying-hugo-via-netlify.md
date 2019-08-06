@@ -30,7 +30,7 @@ The general overview of this process is as follows:
 
 This is the first step towards ~~total world domination~~ having a nice, easily updated blog; you need a base to store all of the required information behind building your site; GitHub is **literally** built for this.
 
-Create a new Repository in GitHub and pull it down to your local machine. This folder is now the site that you'll be working out of. 
+Create a new Repository in GitHub and pull it down to your local machine. This folder is now the site that you'll be working out of.
 
 Once the directory has been pulled locally, you can start the next part of the process
 
@@ -42,9 +42,9 @@ In short, install the hugo.exe to a safe location (*C:/Hugo/hugo.exe* for exampl
 
 ## Initializing your Hugo Site
 
-Provided that Hugo has been installed as an environment variable, you should now be able to run Hugo from any location on your machine. Run 
+Provided that Hugo has been installed as an environment variable, you should now be able to run Hugo from any location on your machine. Run
 
-`hugo version` 
+`hugo version`
 
 to check if Windows has any issues running the Hugo Executable.
 
@@ -70,13 +70,13 @@ I personally went the route of PowerShell to do this:
 
 `Get-ChildItem -Recurse -Directory | ForEach-Object {New-Item .gitkeep}`
 
-This will create a new, 0kb file in each directory underneath your current directory (which should still be the root of the Repo) called .gitkeep. This isn't really a part of Git, but is good practice and a widely adopted method for maintaining empty directories in Git Repositories. 
+This will create a new, 0kb file in each directory underneath your current directory (which should still be the root of the Repo) called .gitkeep. This isn't really a part of Git, but is good practice and a widely adopted method for maintaining empty directories in Git Repositories.
 
 Once you've created the required files, you can make your initial push up to GitHub.
 
 ## Forking/Creating a Custom Theme
 
-Because Netlify will attempt to pull/build any repo that you include in your parent repo, we're unable to simply pull the theme that you're wanting locally; as this limits our ability to make customizations to the theme 
+Because Netlify will attempt to pull/build any repo that you include in your parent repo, we're unable to simply pull the theme that you're wanting locally; as this limits our ability to make customizations to the theme
 
 **And we like customization**
 
@@ -90,7 +90,7 @@ The theme used here for [The Capn's Log](http://capnsammeh.tk) is kindly provide
 
 Once forked, grab the .GIT URL from GitHub and jump back into PowerShell.
 
-We want to add your newly forked Theme as a submodule of the Hugo Repo so it's built every time the site is deployed on Netlify. 
+We want to add your newly forked Theme as a submodule of the Hugo Repo so it's built every time the site is deployed on Netlify.
 
 To do this, simply run the following code from PowerShell:
 
@@ -104,13 +104,15 @@ This will add some files to your .git folder, as well as creating a new file cal
 	url = https://github.com/CapnSammeh/hugo-theme-m10c
 ```
 
+It's also important to ensure that the config.toml file includes your Theme, but that's covered later in this article.
+
 Once completed, push your changes up to the Repo.
 
-## Creating Netlify.TOML 
+## Creating Netlify.TOML
 
 Netlify has this [wonderfully documented](https://www.netlify.com/docs/netlify-toml-reference/) .TOML File (aptly named *netlify.toml*) that allows you to configure the way that Netlify will build and deploy your site.
 
-Because we're using Hugo to build the site, Netlify needs to be provided with some information on how it should build the contents of your Repo into a fully-fledged Hugo-Driven Site. 
+Because we're using Hugo to build the site, Netlify needs to be provided with some information on how it should build the contents of your Repo into a fully-fledged Hugo-Driven Site.
 
 Create a new file in the root of your project called *netlify.toml*; within this file, put the following lines of markup:
 
@@ -140,15 +142,15 @@ publish = 'public'
 command = "hugo --gc --minify"
 ```
 
-Provides Netlify with the build instructions; in this case, that includes publishing the output of the command to the 'Public' directory; this is pretty standard in Netlify-land. 
+Provides Netlify with the build instructions; in this case, that includes publishing the output of the command to the 'Public' directory; this is pretty standard in Netlify-land.
 
 
 
-Command is the exact command being used to build out the site; 
+Command is the exact command being used to build out the site;
 
 ​	--gc (Presumably Garbage-Clean) enables Hugo to run some cleanup activities to remove unused files after the build.
 
-​	--minify allows for minification support. For more information on Minification, see [here](https://gohugo.io/hugo-pipes/minification/) and [here](https://developers.google.com/speed/docs/insights/MinifyResources). 
+​	--minify allows for minification support. For more information on Minification, see [here](https://gohugo.io/hugo-pipes/minification/) and [here](https://developers.google.com/speed/docs/insights/MinifyResources).
 
 
 
@@ -159,7 +161,7 @@ HUGO_VERSION = "0.54.0"
 
 The context declaration is largely unnecessary at this stage, but is nice to have for now for when we deploy a Development and Testing Branch of Hugo, potentially running previews of the newest build.
 
-The HUGO_VERSION line gives Netlify an idea as to what version of the application to pull and build in order to run our command. At the time of writing, the most stable release of Hugo is 0.54.0, hence the version number. 
+The HUGO_VERSION line gives Netlify an idea as to what version of the application to pull and build in order to run our command. At the time of writing, the most stable release of Hugo is 0.54.0, hence the version number.
 
 Once this file has been populated, feel free to push this to your repo.
 
@@ -172,17 +174,18 @@ This one is a bit tough, as it's very dependent on the Theme that you're using, 
 baseURL = "/"
 languageCode = "en-us"
 title = "The Capn's Log"
+theme = "m10c"
 ```
 
-Ensure the Language Code and Title are to your liking (the Title is the name of your site, and language code is pretty obvious). 
+Ensure the Language Code and Title are to your liking (the Title is the name of your site, and language code is pretty obvious), and that the Theme is the title of the Theme that you plan on using. 
 
-**IMPORTANT: ** Make sure you set the baseURL of the site to "/"! This ensures that the URLs that are built using your theme point to the current site, providing you with the ability to change the Domain Name as required. 
+**IMPORTANT: ** Make sure you set the baseURL of the site to "/"! This ensures that the URLs that are built using your theme point to the current site, providing you with the ability to change the Domain Name as required.
 
-Once complete, push the newly created file to your repo. 
+Once complete, push the newly created file to your repo.
 
 ## Linking GitHub and Netlify
 
-Linking your Repository and Netlify is as simple as logging into Netlify using your GitHub Credentials, authenticating into GitHub and selecting the appropriate Repo/Branch to Deploy from. 
+Linking your Repository and Netlify is as simple as logging into Netlify using your GitHub Credentials, authenticating into GitHub and selecting the appropriate Repo/Branch to Deploy from.
 
 Click *New Site from GitHub* and select the Repo we've been working with. On the next page, you'll be able to select a Branch (use Master here unless you've been working in a Branch), and you should see that the build information is pre-specified; this is because we defined that information in our Netlify.TOML file in the previous step.
 
