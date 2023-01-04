@@ -5,8 +5,24 @@ backend:
 media_folder: static/img
 public_folder: /img
 collections:
-  - name: 'blog'
-    label: 'Blog Post'
+# https://www.netlifycms.org/docs/collection-types/
+  - label: 'Pages'
+    name: 'pages'
+    files: 
+      - label: 'Home Page'
+        name: 'homepage'
+        file: 'content/_index.md'
+        fields: 
+          - {label: 'Draft', name: 'draft', widget: 'boolean'}
+          - {label: 'Body Content', name: 'content', widget: 'markdown'}
+      - label: 'Posts Index'
+        name: 'post_index'
+        file: 'content/posts/_index.md'
+        fields: 
+          - {label: 'Draft', name: 'draft', widget: 'boolean'}
+          - {label: 'Body Content', name: 'content', widget: 'markdown'}
+  - label: 'Blog Post'
+    name: 'blog'
     folder: 'content/posts/'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'

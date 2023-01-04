@@ -1,14 +1,41 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Content Manager</title>
-    <!-- Include the script that enables Netlify Identity on this page. -->
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  </head>
-  <body>
-    <!-- Include the script that builds the page and powers Netlify CMS -->
-    <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Content Manager</title>
+  <!-- Include the script that enables Netlify Identity on this page. -->
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+
+<body>
+  <!-- Include the script that builds the page and powers Netlify CMS -->
+  <script src="https://unpkg.com/netlify-cms@2.10.17/dist/netlify-cms.js"></script>
+  <script>
+    CMS.registerEditorComponent({
+      id: "alert",
+      label: "Alert",
+      fields: [{
+          name: "content",
+          label: "Alert Content",
+          widget: "string"
+        }
+      ],
+      pattern: /{{< alert >}}([a-zA-Z0-9-_ ]+){{< \/alert >}}/,
+      fromBlock: function (match) {
+        return {
+          content: match[1],
+        };
+      },
+      toBlock: function (obj) {
+        return `{{< alert >}}${obj.content}{{< /alert >}}}}`;
+      },
+      toPreview: function (obj) {
+        return `<div class="flex px-4 py-3 rounded-md bg-primary-100 dark:bg-primary-900"><span class="dark:text-neutral-300">${obj.content}</span></div>`;
+      },
+    });
+  </script>
+</body>
+
 </html>
