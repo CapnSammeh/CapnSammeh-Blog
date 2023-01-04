@@ -12,13 +12,13 @@
 
 [[main]]
  name = "Blog"
- pageRef = "posts/_index.md"
+ url = "/posts"
  weight = 10
 
 [[main]]
   name = "GitHub"
   url = "https://github.com/CapnSammeh"
-  weight = 30
+  weight = 20
 
 
 # -- Footer Menu --
