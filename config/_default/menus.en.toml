@@ -12,7 +12,7 @@
 
 [[main]]
  name = "Blog"
- pageRef = "/posts"
+ pageRef = "content/posts/_index.md"
  weight = 10
 
 [[main]]
