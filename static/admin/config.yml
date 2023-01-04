@@ -1,5 +1,6 @@
 backend:
-  name: test-repo
+  name: github
+  repo: CapnSammeh/CapnSammeh-Blog
   branch: main
 media_folder: static/img
 public_folder: /img
@@ -9,6 +10,7 @@ collections:
     folder: 'content/posts/'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    filter: {field: 'showCMS', value: true}
     editor:
       preview: true
     fields:
@@ -16,3 +18,4 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: "Show CMS", name: 'showCMS', widget: 'hidden', default: "true"}
