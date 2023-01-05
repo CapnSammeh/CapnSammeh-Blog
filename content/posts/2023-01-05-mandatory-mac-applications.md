@@ -21,5 +21,5 @@ T﻿he biggest issue I come across
 S﻿o, here's my compendium of "Mandatory" Mac Applications that I use day-to-day.
 
 * R﻿aycast
-
-  N﻿otion
+* N﻿otion
+* H﻿yper
