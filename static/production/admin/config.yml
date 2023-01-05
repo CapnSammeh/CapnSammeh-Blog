@@ -1,7 +1,6 @@
 backend:
-  name: github
-  repo: CapnSammeh/CapnSammeh-Blog
-  branch: main
+  name: git-gateway
+local_backend: true
 media_folder: static/img
 public_folder: /img
 collections:
@@ -31,8 +30,9 @@ collections:
     editor:
       preview: true
     fields:
+      - { label: "Show CMS", name: 'showCMS', widget: 'hidden', default: "true"}
+      - { label: 'Draft', name: 'draft', widget: 'boolean' }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Tags', name: 'tags', widget: 'list' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-      - { label: "Show CMS", name: 'showCMS', widget: 'hidden', default: "true"}
