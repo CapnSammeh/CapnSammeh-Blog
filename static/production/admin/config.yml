@@ -30,7 +30,7 @@ collections:
     folder: 'content/posts/'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    filter: {field: 'showCMS', value: true}
+    filter: { field: 'showCMS', value: 'true' }
     preview_path: "posts/{{slug}}"
     editor:
       preview: true
