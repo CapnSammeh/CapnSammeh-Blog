@@ -6,7 +6,7 @@ theme = "blowfish"
 baseURL = "https://your_domain.com/"
 defaultContentLanguage = "en"
 
-staticDir = ['static/development']
+staticDir = ['static/production']
 
 pluralizeListTitles = "true" # hugo function useful for non-english languages, find out more in  https://gohugo.io/getting-started/configuration/#pluralizelisttitles
 

@@ -1,0 +1,38 @@
+backend:
+  name: git-gateway
+local_backend: true
+media_folder: static/img
+public_folder: /img
+collections:
+# https://www.netlifycms.org/docs/collection-types/
+  - label: 'Pages'
+    name: 'pages'
+    files: 
+      - label: 'Home Page'
+        name: 'homepage'
+        file: 'content/_index.md'
+        fields: 
+          - {label: 'Draft', name: 'draft', widget: 'boolean'}
+          - {label: 'Title', name: 'title', widget: 'string'}
+          
+      - label: 'Posts Index'
+        name: 'post_index'
+        file: 'content/posts/_index.md'
+        fields: 
+          - {label: 'Draft', name: 'draft', widget: 'boolean'}
+          - {label: 'Title', name: 'title', widget: 'string'}
+  - label: 'Blog Post'
+    name: 'blog'
+    folder: 'content/posts/'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    filter: {field: 'showCMS', value: true}
+    editor:
+      preview: true
+    fields:
+      - { label: "Show CMS", name: 'showCMS', widget: 'hidden', default: "true"}
+      - { label: 'Draft', name: 'draft', widget: 'boolean' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Tags', name: 'tags', widget: 'list' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
