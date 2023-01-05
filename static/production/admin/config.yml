@@ -1,5 +1,5 @@
 backend:
-``  name: github
+  name: github
   repo: CapnSammeh/CapnSammeh-Blog
   branch: main
 media_folder: static/img
