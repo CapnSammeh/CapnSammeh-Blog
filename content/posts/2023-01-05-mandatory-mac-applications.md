@@ -12,4 +12,14 @@ tags:
   - downloads
   - tools
 ---
-Updating this should **not** trigger a new build
+A﻿nyone who's spent more than 30 seconds with me while I work is aware that
+
+> I﻿ use a bunch of third-party apps to try and speed up my day-to-day
+
+T﻿he biggest issue I come across 
+
+S﻿o, here's my compendium of "Mandatory" Mac Applications that I use day-to-day.
+
+* R﻿aycast
+
+  N﻿otion
