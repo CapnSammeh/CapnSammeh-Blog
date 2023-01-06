@@ -1,15 +1,22 @@
+# Backend Config
 backend:
   name: git-gateway
 local_backend: true
+site_url: "http://localhost:1313"
+
+# Folders
 media_folder: static/img
 public_folder: /public/images
+
+# Other
 show_preview_links: true
-site_url: "http://localhost:1313"
+
+# Collections
 collections:
-# https://www.netlifycms.org/docs/collection-types/
-  - label: 'Pages'
+  # Branch Pages
+  - label: 'Branch Pages'
     name: 'pages'
-    create: true
+    create: false
     files: 
       - label: 'Home Page'
         name: 'homepage'
@@ -17,18 +24,14 @@ collections:
         fields: 
           - {label: 'Draft', name: 'draft', widget: 'boolean'}
           - {label: 'Title', name: 'title', widget: 'string'}
-          
-      - label: 'Posts Index'
-        name: 'post_index'
-        file: 'content/posts/_index.md'
-        fields: 
-          - {label: 'Draft', name: 'draft', widget: 'boolean'}
-          - {label: 'Title', name: 'title', widget: 'string'}
-  - label: 'Blog Post'
-    name: 'blog'
-    folder: 'content/posts/'
+  
+  # Posts Management
+  - name: 'posts'
+    label: 'Posts'
+    label_singular: 'Post'
+    folder: content/posts
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    slug: '{{title}}/index'
     filter: {field: 'showCMS', value: true}
     preview_path: "posts/{{slug}}"
     editor:
@@ -38,7 +41,7 @@ collections:
       - { label: 'Draft', name: 'draft', widget: 'boolean', default: true, required: false}
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Series', name: 'series', widget: 'list' }
-      - { label: 'Series Order', name: 'series_order', widget: 'number', value_type: 'int' }
+      - { label: 'Series', name: 'series', widget: 'list', required: false }
+      - { label: 'Series Order', name: 'series_order', widget: 'number', value_type: 'int', required: false }
       - { label: 'Tags', name: 'tags', widget: 'list', required: false, allow_add: true }
       - { label: 'Body', name: 'body', widget: 'markdown', required: false }
