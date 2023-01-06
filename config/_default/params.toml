@@ -24,11 +24,11 @@ enableCodeCopy = true
 
 [homepage]
   layout = "profile" # valid options: page, profile, hero, card, background, custom
-  showRecent = true
+  showRecent = false
   showRecentItems = 5
   showMoreLink = true
   showMoreLinkDest = "/posts"
-  cardView = true
+  cardView = false
   cardViewScreenWidth = false
 
 [article]
