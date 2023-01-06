@@ -1,8 +1,8 @@
 ---
 showCMS: true
-draft: true
+draft: false
 title: Mandatory Mac Applications
-summary: "Third-Party Apps to tinker with intstead of working"
+summary: "Third-Party Apps to tinker with instead of working"
 date: 2023-01-05T04:05:50.659Z
 tags:
   - mac

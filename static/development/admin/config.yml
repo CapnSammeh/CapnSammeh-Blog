@@ -9,39 +9,39 @@ media_folder: static/img
 public_folder: /public/images
 
 # Other
-show_preview_links: true
+show_preview_links: false
 
 # Collections
 collections:
   # Branch Pages
-  - label: 'Branch Pages'
-    name: 'pages'
-    create: false
+  - name: 'pages'
+    label: 'Branch Pages'
     files: 
-      - label: 'Home Page'
-        name: 'homepage'
+      - label: 'Posts Landing Page'
+        name: 'posts'
         file: 'content/_index.md'
         fields: 
-          - {label: 'Draft', name: 'draft', widget: 'boolean'}
-          - {label: 'Title', name: 'title', widget: 'string'}
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Summary', name: 'summary', widget: 'string'}
   
   # Posts Management
   - name: 'posts'
     label: 'Posts'
     label_singular: 'Post'
-    folder: content/posts
+    folder: /content/posts/
+    path: '{{slug}}/index'
     create: true
-    slug: '{{title}}/index'
     filter: {field: 'showCMS', value: true}
-    preview_path: "posts/{{slug}}"
-    editor:
-      preview: true
+    
+    nested:
+      depth: 100 # max depth to show in the collection tree
+      summary: '{{title}}' # optional summary for a tree node, defaults to the inferred title field
+    
     fields:
       - { label: "Show CMS", name: 'showCMS', widget: 'hidden', default: true}
       - { label: 'Draft', name: 'draft', widget: 'boolean', default: true, required: false}
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Series', name: 'series', widget: 'list', required: false }
-      - { label: 'Series Order', name: 'series_order', widget: 'number', value_type: 'int', required: false }
       - { label: 'Tags', name: 'tags', widget: 'list', required: false, allow_add: true }
       - { label: 'Body', name: 'body', widget: 'markdown', required: false }
+    meta: { path: { widget: string, label: 'Path', index_file: 'index' } }
