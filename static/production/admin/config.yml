@@ -3,7 +3,7 @@ backend:
   name: github
   repo: CapnSammeh/CapnSammeh-Blog
   branch: main
-site_url: "http://samherring.netlify.app"
+site_url: "https://samherring.netlify.app"
 
 # Folders
 media_folder: static/img
