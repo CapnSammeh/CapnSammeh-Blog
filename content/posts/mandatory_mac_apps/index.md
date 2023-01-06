@@ -1,15 +1,13 @@
 ---
 showCMS: true
-draft: false
+draft: true
 title: Mandatory Mac Applications
-summary: "Third-Party Apps to tinker with instead of working"
 date: 2023-01-05T04:05:50.659Z
 tags:
   - mac
   - software
   - downloads
   - tools
-showTableOfContents: true
 ---
 Anyone who's spent more than 30 seconds with me while I work is aware that
 
