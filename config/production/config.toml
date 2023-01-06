@@ -3,7 +3,7 @@
 # https://blowfish.page/docs/getting-started/
 
 theme = "blowfish"
-baseURL = "https://your_domain.com/"
+baseURL = "https://samherring.netlify.app/"
 defaultContentLanguage = "en"
 
 staticDir = ['static/production']
@@ -23,7 +23,6 @@ buildFuture = false
 [taxonomies]
   tag = "tags"
   category = "categories"
-  author = "authors"
   series = "series"
 
 [sitemap]

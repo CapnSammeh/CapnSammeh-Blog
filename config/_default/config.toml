@@ -3,7 +3,7 @@
 # https://blowfish.page/docs/getting-started/
 
 theme = "blowfish"
-baseURL = "https://your_domain.com/"
+baseURL = "https://localhost:1313/"
 defaultContentLanguage = "en"
 
 staticDir = ['static/development']
@@ -23,7 +23,6 @@ buildFuture = true
 [taxonomies]
   tag = "tags"
   category = "categories"
-  author = "authors"
   series = "series"
 
 [sitemap]
