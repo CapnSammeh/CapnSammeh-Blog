@@ -8,6 +8,7 @@ tags:
   - software
   - downloads
   - tools
+thumbnail: featured.jpg
 ---
 Anyone who's spent more than 30 seconds with me while I work is aware that
 

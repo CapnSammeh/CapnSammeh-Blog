@@ -20,10 +20,10 @@ collections:
     files: 
       - label: 'Posts Landing Page'
         name: 'posts'
-        file: 'content/_index.md'
+        file: 'content/posts/_index.md'
         fields: 
           - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'Summary', name: 'summary', widget: 'string'}
+          - { label: 'Body', name: 'body', widget: 'markdown' }
   
   # Posts Management
   - name: 'posts'
@@ -44,5 +44,6 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Tags', name: 'tags', widget: 'list', required: false, allow_add: true }
-      - { label: 'Body', name: 'body', widget: 'markdown', required: false }
+      - { label: "Featured Image", name: "thumbnail", widget: "image", required: false }
+      - { label: 'Body', name: 'body', widget: 'markdown', required: false, media_folder: '{{slug}}' }
     meta: { path: { widget: string, label: 'Path', index_file: 'index' } }
