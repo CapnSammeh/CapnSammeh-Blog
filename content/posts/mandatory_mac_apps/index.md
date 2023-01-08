@@ -24,7 +24,71 @@ In summation - here's my list of Mandatory Mac Apps:
 * Raycast
 * Notion
 * Hyper
+* Beeper
+
+## Let's talk price
+
+| Icon | Description |
+|---|---|
+| 💵 | Paid App |
+| 🏪 | SetApp |
+| 🐧 | Open Source |
+| 🆓 | You guessed it - totally free|
 
 ## The Big Ones
+I read a weird amount of "best apps" lists (there are wierder things to do in your spare time), and I've noticed there's a lack of detail surrounding some of the more *configurable* apps out there. 
 
+These apps are powerhouses straight out of the tin, but can be **extended** to be even more powerful through customisatin and configuration. Below are my favorites
+
+### Visual Studio Code
+🆓
+
+---
+> I'm literally writing this article in VSCode
+
+### Google Chrome
+🆓
+
+---
+
+### Raycast
+🆓
+
+---
+
+
+### Hyper
+🆓
+
+---
+
+### Notion
+🆓
+
+---
+
+## Utilities
+### Forklift
+💵/🏪
+
+---
+
+### Postman
+🆓
+
+### Rocket
+💵
+
+### MacMediaKeyForwarder
+🆓 
+
+### CleanShotX
+💵/🏪 
+
+
+## Web Apps
+
+## Honorable Mentions
+### MermaidJS/Mermaid.live
+🆓
 
