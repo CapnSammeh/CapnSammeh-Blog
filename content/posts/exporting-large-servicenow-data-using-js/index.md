@@ -24,7 +24,7 @@ function bulkDownload(tableName, instanceName, recordCount, queryParam) {
     var filePath = `${urlObj.toString()}.xml`;
     link.href = filePath;
     link.download = filePath;
-    // link.click();
+    link.click();
 
     fetch(`${urlObj.toString()}`)
         // Get the Response Body as text
@@ -37,8 +37,7 @@ function bulkDownload(tableName, instanceName, recordCount, queryParam) {
         .then(parsedXML => {
             var returnedXMLNodeCount = parsedXML.getElementsByTagName('sys_id').length;
             if (returnedXMLNodeCount == 0) {
-                console.log("No data found! Exiting...");
-                return;
+                return new Error;
             } else {
                 return parsedXML.getElementsByTagName('sys_id')[returnedXMLNodeCount - 1];
             }
