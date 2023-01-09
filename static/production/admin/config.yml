@@ -1,8 +1,8 @@
 # Backend Config
 backend:
   name: git-gateway
-#   repo: CapnSammeh/CapnSammeh-Blog
-#   branch: main
+  repo: CapnSammeh/CapnSammeh-Blog
+  branch: main
 site_url: "https://samherring.netlify.app"
 
 # Folders
