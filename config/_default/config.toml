@@ -17,6 +17,9 @@ summaryLength = 30
 buildDrafts = true
 buildFuture = true
 
+[comments]
+disqusShortname = 'samherring'
+
 [imaging]
   anchor = 'Center'
 

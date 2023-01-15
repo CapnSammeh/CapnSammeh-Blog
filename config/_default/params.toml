@@ -12,6 +12,7 @@ disableImageZoom = true
 
 enableSearch = true
 enableCodeCopy = true
+showComments = true
 
 [header]
   layout = "basic" # valid options: basic, fixed
