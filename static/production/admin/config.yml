@@ -42,8 +42,9 @@ collections:
       - { label: "Show CMS", name: 'showCMS', widget: 'hidden', default: true}
       - { label: 'Draft', name: 'draft', widget: 'boolean', default: true, required: false}
       - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'string', required: false }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Tags', name: 'tags', widget: 'list', required: false, allow_add: true }
-      - { label: "Featured Image", name: "thumbnail", widget: "image", required: false }
+      - { label: "Featured Image", name: "thumbnail", widget: "image", required: false, default: '{{slug}}/featured.jpg' }
       - { label: 'Body', name: 'body', widget: 'markdown', required: false, media_folder: '{{slug}}' }
     meta: { path: { widget: string, label: 'Path', index_file: 'index' } }

@@ -32,3 +32,5 @@ buildFuture = true
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
+
+googleAnalytics = 'G-TQ2PTJN3YY'
