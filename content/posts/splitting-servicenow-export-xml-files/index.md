@@ -1,20 +1,24 @@
 ---
-showCMS: true
-draft: true
+draft: false
 title: Splitting ServiceNow Export XML Files
+description: How I chunked up a massive XML file into more manageable bites
 date: 2023-01-09T04:51:01.215Z
 tags:
   - servicenow
 ---
+I've had some pretty frustrating experiences with ServiceNow Data Exports lately (see [some of my other exploits](https://samherring.com/posts/exporting-large-servicenow-data-using-js/) if you're interested in knowing more), and one of the challenges we came across was the need to split out a massive XML file. 
 
+There are a few ways to go about this, but one of the biggest roadblocks I faced with this particular situation was that we *were unable to use anything that wasn't installed on a vanilla Windows PC*. 
+
+For your amusement (and if you're lucky, only that), this is the script we used to split one 900mb XML file into as many smaller components as needed (in our case, 100 XML records per file).
 
 ```powershell
 $fileCount=1
 $recordCount=0
 
-$inputFile='Sidekick Attachments.xml'
+$inputFile='Massive ServiceNow File.xml'
 
-$recordBreak='<u_kb_template_cba_standard action="INSERT_OR_UPDATE">'
+$recordBreak='<u_kb_template_custom_template action="INSERT_OR_UPDATE">'
 $regex=$recordBreak
 
 $outputPath = "$PWD\new_output3"
