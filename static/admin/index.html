@@ -16,6 +16,8 @@
 <body>
   <!-- Include the script that builds the page and powers Netlify CMS -->
   <script src="https://unpkg.com/netlify-cms@2.10.17/dist/netlify-cms.js"></script>
+  <!-- Blowfish Shortcodes in Editor -->
+  <!-- Alert -->
   <script>
     CMS.registerEditorComponent({
       id: "alert",
@@ -26,7 +28,7 @@
           widget: "string"
         }
       ],
-      pattern: /{{< alert >}}([a-zA-Z0-9-_ ]+){{< \/alert >}}/,
+      pattern: /{{< alert >}}(.*?){{< \/alert >}}/ms,
       fromBlock: function (match) {
         return {
           content: match[1],
@@ -37,6 +39,85 @@
       }
     });
   </script>
+  <!-- Badge -->
+  <script>
+    CMS.registerEditorComponent({
+      id: "badge",
+      label: "Badge",
+      fields: [{
+          name: "content",
+          label: "Badge Content",
+          widget: "string"
+        }
+      ],
+      pattern: /{{< badge >}}(.*?){{< \/badge >}}/ms,
+      fromBlock: function (match) {
+        return {
+          content: match[1],
+        };
+      },
+      toBlock: function (obj) {
+        return `{{< badge >}}${obj.content}{{< /badge >}}`;
+      }
+    });
+  </script>
+    <!-- Button -->
+    <script>
+      CMS.registerEditorComponent({
+        id: "button",
+        label: "Button",
+        fields: [{
+            name: "content",
+            label: "Button Text",
+            widget: "string"
+          },
+          {
+            name: "href",
+            label: "URL",
+            widget: "string"
+          },{
+            name: "target",
+            label: "URL Target",
+            widget: "string"
+          }
+        ],
+        pattern: /{{< button href="(.*?)" target="(.*?)" >}}.(.*?).{{< \/button >}}/ms,
+        fromBlock: function (match) {
+          return {
+            href: match[1],
+            target: match[2],
+            content: match[3]
+            
+          };
+        },
+        toBlock: function (obj) {
+          return `{{< button href="${obj.href}" target="${obj.target}" >}} ${obj.content} {{< /button >}}`
+        }
+      });
+    </script>
+        <!-- Lead -->
+        <script>
+          CMS.registerEditorComponent({
+            id: "lead",
+            label: "Lead",
+            fields: [{
+                name: "content",
+                label: "Lead Content",
+                widget: "string"
+              }
+            ],
+            pattern: /{{< lead >}} (.*?) {{< \/lead >}}/ms,
+            fromBlock: function (match) {
+              return {
+                content: match[1],
+                
+              };
+            },
+            toBlock: function (obj) {
+              return `{{< lead >}} ${obj.content} {{< /lead >}}`
+            }
+          });
+        </script>
 </body>
 
 </html>
