@@ -2,8 +2,7 @@
 showComments: true
 draft: false
 title: Bulk Exporting ServiceNow Data as XML using JavaScript
-description: >-
-  How I used JavaScript to avoid exporting hundreds of megabytes of data from ServiceNow
+description: How I used JavaScript to avoid exporting hundreds of megabytes of data from ServiceNow
 date: 2023-01-09T05:56:20.186Z
 tags:
   - servicenow
