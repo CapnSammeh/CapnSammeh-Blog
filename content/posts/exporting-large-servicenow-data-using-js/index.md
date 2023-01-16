@@ -8,7 +8,8 @@ description: >-
 date: 2023-01-09T05:56:20.186Z
 tags:
   - servicenow
-thumbnail: featured.jpg
+thumbnail: >-
+  https://res.cloudinary.com/capnsammeh/image/upload/c_scale,f_auto,q_auto,w_400/v1673863114/featured_btfjob.jpg
 ---
 Recently, I came across a need to export large amounts of information from ServiceNow in XML format - problematically, these records (within *kb_knowledge* specifically) include their own discrete attachment/s, meaning that a single XML file could be 20 -> 30mb in size.
 
