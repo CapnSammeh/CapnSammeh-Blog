@@ -9,6 +9,7 @@ tags:
   - downloads
   - tools
 thumbnail: featured.jpg
+showComments: true
 ---
 Anyone who's spent more than 30 seconds with me while I work is aware that
 

@@ -31,14 +31,13 @@ collections:
     folder: /content/posts/
     path: '{{slug}}/index'
     create: true
-    filter: {field: 'showCMS', value: true}
     
     nested:
       depth: 100 # max depth to show in the collection tree
       summary: '{{title}}' # optional summary for a tree node, defaults to the inferred title field
     
     fields:
-      - { label: "Show CMS", name: 'showCMS', widget: 'hidden', default: true}
+      - { label: "Show Comments", name: 'showComments', widget: 'hidden', default: true}
       - { label: 'Draft', name: 'draft', widget: 'boolean', default: true, required: false}
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Description', name: 'description', widget: 'string', required: false }
