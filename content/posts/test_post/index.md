@@ -1,6 +1,6 @@
 ---
 draft: true
-title: Over-engineering a Technical Blog
+title: Over-Engineering a Technical Blog
 description: >-
   Using Hugo, Netlify, NetlifyCMS and GitHub Actions to create a self-deploying,
   automatically managed Blog.
