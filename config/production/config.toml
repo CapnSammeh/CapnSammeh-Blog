@@ -14,8 +14,8 @@ enableRobotsTXT = true
 paginate = 20
 summaryLength = 30
 
-buildDrafts = true
-buildFuture = true
+buildDrafts = false
+buildFuture = false
 
 [comments]
 disqusShortname = 'samherring'
