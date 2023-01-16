@@ -9,6 +9,19 @@ site_url: "https://samherring.netlify.app"
 media_folder: static/img
 public_folder: /public/images
 
+# Media Collections
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: capnsammeh
+    api_key: 524921581881768
+    output_filename_only: false
+    default_transformations:
+      - - fetch_format: auto
+          width: 400
+          quality: auto
+          crop: scale
+
 # Other
 show_preview_links: false
 
