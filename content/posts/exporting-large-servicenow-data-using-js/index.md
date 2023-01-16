@@ -2,9 +2,11 @@
 showCMS: true
 draft: false
 title: Bulk Exporting ServiceNow Data as XML using JavaScript
+description: Preventing future headaches when exporting large datasets from ServiceNow
 date: 2023-01-09T05:56:20.186Z
 tags:
   - servicenow
+thumbnail: featured.jpg
 ---
 Recently, I came across a need to export large amounts of information from ServiceNow in XML format - problematically, these records (within *kb_knowledge* specifically) include their own discrete attachment/s, meaning that a single XML file could be 20 -> 30mb in size.
 
