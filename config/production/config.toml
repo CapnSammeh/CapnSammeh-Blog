@@ -14,8 +14,11 @@ enableRobotsTXT = true
 paginate = 20
 summaryLength = 30
 
-buildDrafts = false
-buildFuture = false
+buildDrafts = true
+buildFuture = true
+
+[comments]
+disqusShortname = 'samherring'
 
 [imaging]
   anchor = 'Center'
@@ -32,3 +35,5 @@ buildFuture = false
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
+
+googleAnalytics = 'G-TQ2PTJN3YY'
