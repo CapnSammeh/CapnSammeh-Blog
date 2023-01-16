@@ -1,6 +1,6 @@
 on:
   schedule:
-  - cron: "@daily"
+  - cron: "0 0 * * *"
   
 jobs:
   merge-me:
