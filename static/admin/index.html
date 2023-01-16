@@ -9,24 +9,27 @@
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <style>
-  [data-slate-editor] { 
-    -webkit-user-modify: read-write !important; 
-}
+  [data-slate-editor] {
+    -webkit-user-modify: read-write !important;
+  }
 </style>
+
 <body>
   <!-- Include the script that builds the page and powers Netlify CMS -->
   <script src="https://unpkg.com/netlify-cms@2.10.17/dist/netlify-cms.js"></script>
+  <!-- Blowfish Shortcodes in Editor -->
+  <!-- Alert -->
   <script>
     CMS.registerEditorComponent({
       id: "alert",
       label: "Alert",
       fields: [{
-          name: "content",
-          label: "Alert Content",
-          widget: "string"
-        }
+        name: "content",
+        label: "Alert Content",
+        widget: "string"
+      }
       ],
-      pattern: /{{< alert >}}([a-zA-Z0-9-_ ]+){{< \/alert >}}/,
+      pattern: /{{< alert >}}(.*?){{< \/alert >}}/ms,
       fromBlock: function (match) {
         return {
           content: match[1],
@@ -37,6 +40,139 @@
       }
     });
   </script>
+  <!-- Badge -->
+  <script>
+    CMS.registerEditorComponent({
+      id: "badge",
+      label: "Badge",
+      fields: [{
+        name: "content",
+        label: "Badge Content",
+        widget: "string"
+      }
+      ],
+      pattern: /{{< badge >}}(.*?){{< \/badge >}}/ms,
+      fromBlock: function (match) {
+        return {
+          content: match[1],
+        };
+      },
+      toBlock: function (obj) {
+        return `{{< badge >}}${obj.content}{{< /badge >}}`;
+      }
+    });
+  </script>
+  <!-- Button -->
+  <script>
+    CMS.registerEditorComponent({
+      id: "button",
+      label: "Button",
+      fields: [{
+        name: "content",
+        label: "Button Text",
+        widget: "string"
+      },
+      {
+        name: "href",
+        label: "URL",
+        widget: "string"
+      }, {
+        name: "target",
+        label: "URL Target",
+        widget: "string"
+      }
+      ],
+      pattern: /{{< button href="(.*?)" target="(.*?)" >}}.(.*?).{{< \/button >}}/ms,
+      fromBlock: function (match) {
+        return {
+          href: match[1],
+          target: match[2],
+          content: match[3]
+
+        };
+      },
+      toBlock: function (obj) {
+        return `{{< button href="${obj.href}" target="${obj.target}" >}} ${obj.content} {{< /button >}}`;
+      }
+    });
+  </script>
+  <!-- Lead -->
+  <script>
+    CMS.registerEditorComponent({
+      id: "lead",
+      label: "Lead",
+      fields: [{
+        name: "content",
+        label: "Lead Content",
+        widget: "string"
+      }
+      ],
+      pattern: /{{< lead >}} (.*?) {{< \/lead >}}/ms,
+      fromBlock: function (match) {
+        return {
+          content: match[1],
+
+        };
+      },
+      toBlock: function (obj) {
+        return `{{< lead >}} ${obj.content} {{< /lead >}}`;
+      }
+    });
+  </script>
+  <!-- Mermaid -->
+  <script>
+    CMS.registerEditorComponent({
+      id: "mermaid",
+      label: "Mermaid",
+      fields: [{
+        name: "content",
+        label: "Mermaid",
+        widget: "markdown"
+      }
+      ],
+      pattern: /{{< mermaid >}}.(.*?) {{< \/mermaid >}}/ms,
+      fromBlock: function (match) {
+        return {
+          content: match[1],
+
+        };
+      },
+      toBlock: function (obj) {
+        return `{{< mermaid >}} ${obj.content} {{< /mermaid >}}`;
+      }
+    });
+  </script>
+    <!-- TypeIt -->
+    <script>
+      CMS.registerEditorComponent({
+        id: "typeit",
+        label: "TypeIt",
+        fields: [{
+          name: "content",
+          label: "TypeIt Content",
+          widget: "string"
+        },
+        {
+          name: "tag",
+          label: "TypeIt Tag",
+          widget: "string",
+          default: "p",
+          required: false
+        }
+        ],
+        pattern: /{{< typeit tag=(.*?) >}} (.*?) {{< \/typeit >}}/ms,
+        fromBlock: function (match) {
+          return {
+            tag: match[1],
+            content: match[2]
+  
+          };
+        },
+        toBlock: function (obj) {
+          return `{{< typeit tag=${obj.tag} >}} ${obj.content} {{< /typeit >}}`;
+        }
+      });
+    </script>
 </body>
 
 </html>

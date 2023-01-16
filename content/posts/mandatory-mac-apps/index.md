@@ -1,6 +1,6 @@
 ---
-showCMS: true
 draft: true
+branch: false
 title: Mandatory Mac Applications
 date: 2023-01-05T04:05:50.659Z
 tags:
