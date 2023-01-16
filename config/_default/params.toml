@@ -35,7 +35,7 @@ showComments = true
 [article]
   showDate = true
   showViews = true
-  showLikes = false
+  showLikes = true
   showDateUpdated = true
   showAuthor = true
   showHero = true
@@ -49,12 +49,12 @@ showComments = true
   editAppendPath = true
   seriesOpened = false
   showHeadingAnchors = true
-  showPagination = true
+  showPagination = false
   invertPagination = false
   showReadingTime = true
   showTableOfContents = true
-  showTaxonomies = true
-  showAuthorsBadges = false 
+  showTaxonomies = false
+  showAuthorsBadges = true 
   showWordCount = false
   showSummary = true
   sharingLinks = [ "linkedin", "twitter", "reddit", "pinterest", "facebook", "email"]
@@ -99,13 +99,13 @@ showComments = true
   #cardView = false
 
 [firebase]
-  # apiKey = "XXXXXX"
-  # authDomain = "XXXXXX"
-  # projectId = "XXXXXX"
-  # storageBucket = "XXXXXX"
-  # messagingSenderId = "XXXXXX"
-  # appId = "XXXXXX"
-  # measurementId = "XXXXXX"
+  apiKey = 'AIzaSyBBZ5k4rtl_HgxuOTekvS8YgdSZXNHsdzg'
+  authDomain	= 'samherring-blog.firebaseapp.com'
+  projectId	= 'samherring-blog'
+  storageBucket	= 'samherring-blog.appspot.com'
+  messagingSenderId	= '943381855909'
+  appId	= '1:943381855909:web:327d3cc1fb4aae9531174c'
+  measurementId	= 'G-FS1C38T6WS'
 
 [fathomAnalytics]
   # site = "ABC12345"

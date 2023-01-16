@@ -36,4 +36,5 @@ disqusShortname = 'samherring'
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
+[GoogleAnalytics]
 googleAnalytics = 'G-TQ2PTJN3YY'
