@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: Splitting ServiceNow Export XML Files
 description: How I chunked up a massive XML file into more manageable bites
 date: 2023-01-09T04:51:01.215Z
