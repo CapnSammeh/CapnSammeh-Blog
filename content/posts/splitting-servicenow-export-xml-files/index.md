@@ -5,6 +5,7 @@ description: How I chunked up a massive XML file into more manageable bites
 date: 2023-01-09T04:51:01.215Z
 tags:
   - servicenow
+thumbnail: featured.jpg
 ---
 I've had some pretty frustrating experiences with ServiceNow Data Exports lately (see [some of my other exploits](https://samherring.com/posts/exporting-large-servicenow-data-using-js/) if you're interested in knowing more), and one of the challenges we came across was the need to split out a massive XML file. 
 
