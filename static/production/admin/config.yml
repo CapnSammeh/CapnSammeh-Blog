@@ -2,7 +2,7 @@
 backend:
   name: git-gateway
   repo: CapnSammeh/CapnSammeh-Blog
-  branch: main
+  branch: content
 site_url: "https://samherring.netlify.app"
 
 # Folders
