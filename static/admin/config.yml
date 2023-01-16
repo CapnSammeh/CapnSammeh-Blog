@@ -42,10 +42,11 @@ collections:
   - name: 'posts'
     label: 'Posts'
     label_singular: 'Post'
-    folder: /content/posts/
+    folder: content/posts/
     path: '{{slug}}/index'
     create: true
-    
+    filter: {field: "branch", value: false}
+    identifier_field: title
     nested:
       depth: 100 # max depth to show in the collection tree
       summary: '{{title}}' # optional summary for a tree node, defaults to the inferred title field
