@@ -1,12 +1,11 @@
 ---
-showComments: true
 draft: true
 branch: false
 title: Deprecation of GlideEncryptor
-description: 'What it means for you, and how you can save yourself from downtime!'
 date: 2024-03-20T22:33:21.304Z
 thumbnail: >-
   https://res.cloudinary.com/capnsammeh/image/upload/c_scale,f_auto,q_auto,w_400/v1710974148/photo-1709572374695-e0a94e1ec340_mttofp.jpg
+showComments: true
 ---
 For years, we've used an API called ***GlideEncrypter*** to provide methods for encrypting and decrypting content within ServiceNow using the Triple DES Algorithm. While this has been sufficient for some, it problematically doesn't align with [NIST 800-131A R2](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-131Ar2.pdf)'s recommendation (published in March of 2019) to no longer use Triple DES for encryption of data post-2023. 
 
