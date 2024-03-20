@@ -1,6 +1,7 @@
 ---
 showComments: true
 draft: true
+branch: false
 title: Deprecation of GlideEncryptor
 description: 'What it means for you, and how you can save yourself from downtime!'
 date: 2024-03-20T22:33:21.304Z
