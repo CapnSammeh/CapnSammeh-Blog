@@ -2,7 +2,7 @@
 backend:
   name: git-gateway
   repo: CapnSammeh/CapnSammeh-Blog
-  branch: content
+  branch: main
 site_url: "https://samherring.netlify.app"
 
 # Folders
@@ -23,7 +23,7 @@ media_library:
           crop: scale
 
 # Other
-show_preview_links: false
+show_preview_links: true
 
 # Collections
 collections:
@@ -45,7 +45,6 @@ collections:
     folder: content/posts/
     path: '{{slug}}/index'
     create: true
-    filter: {field: "branch", value: false}
     identifier_field: title
     nested:
       depth: 100 # max depth to show in the collection tree
