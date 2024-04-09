@@ -1,7 +1,7 @@
 ---
 showComments: true
 draft: true
-title: AutoSysFields + GlideRecord
+title: Writing to Journal Records from Scoped Applications
 date: 2024-04-09T11:15:00.000Z
 thumbnail: ""
 ---
