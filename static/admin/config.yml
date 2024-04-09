@@ -5,6 +5,9 @@ backend:
   branch: main
 site_url: "https://samherring.netlify.app"
 
+# Publish Mode
+publish_mode: editorial_workflow
+
 # Folders
 media_folder: static/img
 public_folder: /public/images
