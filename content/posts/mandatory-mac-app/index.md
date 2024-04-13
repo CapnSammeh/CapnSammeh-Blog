@@ -43,11 +43,7 @@ I read a weird amount of "best apps" lists (there are weirder things to do in yo
 
 These apps are powerhouses straight out of the tin, but can be **extended** to be even more powerful through customisation and configuration. Below are my favourites
 
-### [Visual Studio Code](https://code.visualstudio.com/)
-
-## 🆓
-
-> I'm literally writing this article in VSCode
+### 🆓 [Visual Studio Code](https://code.visualstudio.com/)
 
 VS Code is one of those applications that *everyone* who has anything to do with Web Development recommend. It's fast, has a comprehensive library of plugins, and is seeing regular updates. There are other text-editors out there worth trialing ([Zed](https://zed.dev/) is on my list to check out!), VS Code never fails to disappoint. 
 
@@ -57,9 +53,7 @@ If you're interested in the Plugins I use, check out the [linked section](#VS-Co
 
 - - -
 
-### [Arc](https://arc.net/)
-
-🆓❓
+### 🆓❓ [Arc](https://arc.net/)
 
 Arc has really changed the way I use the browser. I was a Chrome Tab wizard once upon a time, and given the vast majority of my professional work is done in the browser - **having a reliable and fast internet browser is crucial for my wellbeing.**
 
@@ -76,49 +70,46 @@ If you're keen to try out Arc, why not use [my referral code](https://arc.net/gi
 
 - - -
 
-### Raycast
-
-🆓
+### 🆓 [Raycast]()
 
 - - -
 
-### Hyper
-
-🆓
+### 🆓❓ [Beeper]()
 
 - - -
 
-### Notion
+### 🆓 [Warp]()
 
-🆓
+- - -
+
+### 🆓 [Notion]()
 
 - - -
 
 ## Utilities
 
-### Forklift
-
-💵/🏪
+### 💵/🏪 [Forklift]()
 
 - - -
 
-### Postman
+### 🆓 [Postman]()
 
-🆓
 
-### Rocket
+### 💵 [Rocket]()
 
-💵
 
-### MacMediaKeyForwarder
+### 🆓 [MacMediaKeyForwarder]()
 
-🆓 
 
-### CleanShotX
+### 💵/🏪 [CleanShotX]()
 
-💵/🏪 
+- - -
 
 ## Web Apps
+
+### 🆓🐧 MermaidJS/Mermaid.live
+
+- - -
 
 ## VS Code Extensions
 
@@ -149,9 +140,3 @@ If you're keen to try out Arc, why not use [my referral code](https://arc.net/gi
 * [SVG Previewer](https://marketplace.visualstudio.com/items?itemName=vitaliymaz.vscode-svg-previewer)
 * [TabOut](https://marketplace.visualstudio.com/items?itemName=albert.TabOut)
 * [Todo Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)
-
-## Honorable Mentions
-
-### MermaidJS/Mermaid.live
-
-🆓
