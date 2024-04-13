@@ -1,6 +1,6 @@
 ---
 showComments: true
-draft: true
+draft: false
 title: Mandatory Mac Applications
 date: 2024-04-10T07:45:00.000Z
 tags:
