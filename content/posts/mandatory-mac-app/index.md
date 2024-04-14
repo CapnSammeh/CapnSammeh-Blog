@@ -2,7 +2,8 @@
 showComments: true
 draft: false
 title: Mandatory Mac Applications
-date: 2024-04-10T07:45:00.000Z
+description: The applications I use to GSD
+date: 2024-04-15T08:28:00.000Z
 tags:
   - mac
   - software
@@ -15,15 +16,6 @@ Anyone who's spent more than 30 seconds with me while I work is aware that
 > I'm a sucker for third-party apps to try and speed up my day-to-day
 
 One of the questions I get asked *often enough* is **"Do you have any recommendations for apps?"** - this post is an effort to try and capture the applications I've decided are **mandatory** for me at work. 
-
-## TLDR
-
-In summation - here's my list of Mandatory Mac Apps:
-
-* Raycast
-* Notion
-* Hyper
-* Beeper
 
 ## Let's talk price
 
@@ -70,7 +62,7 @@ If you're keen to try out Arc, why not use [my referral code](https://arc.net/gi
 
 - - -
 
-### [Raycast](<>) 🆓
+### [Raycast](https://www.raycast.com) 🆓
 
 Spotlight search is one of the more highly utilised applications on my device, but since discovering Raycast, it's **completely superseded the native Spotlight Search.** 
 
@@ -83,59 +75,99 @@ It's also replaced quite a few applications for me, as it has a lot of the featu
 My mandatories when it comes to Extensions are:
 
 1. Brew
-   - For quick installations/removal of applications via Homebrew 
+
+   * For quick installations/removal of applications via Homebrew 
 2. Calendar + My Schedule
-   - Gives me visibility of my upcoming meetings, and a means to join then from 3 keystrokes
+
+   * Gives me visibility of my upcoming meetings, and a means to join then from 3 keystrokes
 3. CleanShotX
-   - CleanShotX has a bunch of awesome features, but I always forget the complicated chords to access the shortcuts. This lets me quickly type "OCR" (for example) to access the OCR function of CleanShotX.
+
+   * CleanShotX has a bunch of awesome features, but I always forget the complicated chords to access the shortcuts. This lets me quickly type "OCR" (for example) to access the OCR function of CleanShotX.
 4. Clipboard History
-   - Bound to CMD+SHIFT+V, having all of my clipboard at the ready is extremely useful. 
+
+   * Bound to CMD+SHIFT+V, having all of my clipboard at the ready is extremely useful. 
 5. Color Picker
-   - Seems like a simple one, but being able to quickly identify a specific color for reuse is VERY handy in front-end development. 
+
+   * Seems like a simple one, but being able to quickly identify a specific color for reuse is VERY handy in front-end development. 
 6. MS Teams Meetings
-   - Allows me to manage things like my Microphone and Webcam quickly from Raycast - can also be bound to keyboard shortcuts for global management of device access.
+
+   * Allows me to manage things like my Microphone and Webcam quickly from Raycast - can also be bound to keyboard shortcuts for global management of device access.
 7. Navigation
-   - Lets me search the menu items of the given window - really handy for accessing hidden or less-used functions without having to leave the home row. 
+
+   * Lets me search the menu items of the given window - really handy for accessing hidden or less-used functions without having to leave the home row. 
 8. Spotify Controls
-   - Seems like a no-brainer, but being able to Pause+Skip etc regardless of which keyboard I'm using (some have media controls, other don't) is a godsend. 
+
+   * Seems like a no-brainer, but being able to Pause+Skip etc regardless of which keyboard I'm using (some have media controls, other don't) is a godsend. 
 9. Timers
-   - My lil' ADHD brain sometimes need a kick to get going. Timers really helps create the artificial pressure I need to GSD (Get Shit Done). 
+
+   * My lil' ADHD brain sometimes need a kick to get going. Timers really helps create the artificial pressure I need to GSD (Get Shit Done). 
 10. Window Management
-   - The creme de la creme of Raycast Features (imho) - completely replaced Rectangle, Swish, etc. and has become *the only* way I manage windows on my device. 
+
+* The creme de la creme of Raycast Features (imho) - completely replaced Rectangle, Swish, etc. and has become *the only* way I manage windows on my device. 
 
 - - -
 
-### [Beeper](<>) 🆓❓
+### [Beeper](https://www.beeper.com/) 🆓
+
+![](https://res.cloudinary.com/capnsammeh/image/upload/c_scale,f_auto,q_auto,w_400/v1713133051/CleanShot_2024-04-15_at_08.16.30_2x_rqj40z.png "Beeper")
+
+Beeper is ❤️
+
+I'm really sick of bouncing around between Messaging platforms for different individuals, friend-groups, etc., and Beeper was the solution for me. I was an early adopter, and have been on the journey with them for some time now, and couldn't recommend the product more. 
+
+For me, Beeper replaces the need to have discrete messaging apps for:
+
+1. Facebook Messenger
+2. Signal
+3. Instagram
+4. LinkedIn
+5. WhatsApp
+6. iMessage
+
+It's also now available to the public, so I highly highly recommend it to anyone looking to declutter their messaging platforms. 
 
 - - -
 
-### [Warp](<>) 🆓
+### [Warp](https://www.warp.dev/) 🆓
+
+![](https://res.cloudinary.com/capnsammeh/image/upload/c_scale,f_auto,q_auto,w_400/v1713133234/CleanShot_2024-04-15_at_08.20.14_2x_glavsr.png "Warp")
+
+A clean, fast terminal replacement with all of the niceties of modern development? Sign me up! ✏️
 
 - - -
 
-### [Notion](<>) 🆓
+### [Notion](https://www.notion.so/) 🆓
+
+What's a "Mandatory App List" without a mention to Notion? 
+
+Notion is a massive application for me, and as such, it'll have it's own post on here one day about how I use it as a complete Task Management + CRM + Habit Tracker + Daily Journal + More
+
+![](https://res.cloudinary.com/capnsammeh/image/upload/c_scale,f_auto,q_auto,w_400/v1713133392/CleanShot_2024-04-15_at_08.21.52_2x_weodk5.png)
 
 - - -
 
 ## Utilities
 
-### [Forklift](<>) 💵/🏪
+### [Forklift](<https://binarynights.com/>) 💵/🏪
+Mac's default Finder application is *fine*, but I often need something a bit more customisable and robust - enter Forklift!
 
-- - -
+### [Postman](<https://www.postman.com/>) 🆓
+Mandatory for anyone who's interfacing with APIs on a regular basis!
 
-### [Postman](<>) 🆓
+### [Rocket](<https://matthewpalmer.net/rocket/>) 💵
+As an avid emoji-user, Rocket helps me quickly find a means of expression consistently and reliably, with meaningful keywords and some fuzzy matching. Configurability means I can turn it off when in Applications with their own built-in function - very nice. 
 
-### [Rocket](<>) 💵
+### [MacMediaKeyForwarder](<https://github.com/milgra/macmediakeyforwarder>) 🆓
+No Apple - I don't want to use Apple Music. Stop forcing it on me. MMKF lets me prioritise the media key activities, so it's always relevant for me no matter what's playing, and from where. 
 
-### [MacMediaKeyForwarder](<>) 🆓
 
-### [CleanShotX](<>) 💵/🏪
-
-- - -
-
-## Web Apps
-
-### MermaidJS/Mermaid.live 🆓🐧
+### [CleanShotX](<https://cleanshot.com/>) 💵/🏪
+The absolute best tool on Mac I've found for screenshots and recordings all in one. Some of my most utilised features of CleanShotX include:
+- OCR: Rip the text out of any screenshot quickly and with a high level of confidence. 
+- GIF Recordings of Screens
+- Video Recording too
+- Annotation of Screenshots
+- More more more!
 
 - - -
 
