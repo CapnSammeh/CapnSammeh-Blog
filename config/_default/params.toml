@@ -24,7 +24,7 @@ showComments = true
   showScrollToTop = true
 
 [homepage]
-  layout = "profile" # valid options: page, profile, hero, card, background, custom
+  layout = "page" # valid options: page, profile, hero, card, background, custom
   showRecent = false
   showRecentItems = 5
   showMoreLink = true
@@ -40,8 +40,8 @@ showComments = true
   showAuthor = true
   showHero = true
   heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
-  layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
-  layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
+  layoutBackgroundBlur = false # only used when heroStyle equals background or thumbAndBackground
+  layoutBackgroundHeaderSpace = false # only used when heroStyle equals background
   showBreadcrumbs = false
   showDraftLabel = true
   showEdit = false

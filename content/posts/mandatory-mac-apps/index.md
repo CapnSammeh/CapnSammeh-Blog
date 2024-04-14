@@ -28,7 +28,7 @@ While some of the apps here are free (as in beer), some of the items mentioned i
 | 🏪   | SetApp - Can be accessed via [SetApp](https://setapp.com/) |
 | 🐧   | Open Source - Feeling friendly? Contribute now!            |
 | 🆓   | You guessed it - totally free                              |
-| ❓    | Limited Release - you may need an invite                   |
+| ❓   | Limited Release - you may need an invite                   |
 
 ## The Big Ones
 
