@@ -24,7 +24,7 @@ showComments = true
   showScrollToTop = true
 
 [homepage]
-  layout = "page" # valid options: page, profile, hero, card, background, custom
+  layout = "profile" # valid options: page, profile, hero, card, background, custom
   showRecent = false
   showRecentItems = 5
   showMoreLink = true

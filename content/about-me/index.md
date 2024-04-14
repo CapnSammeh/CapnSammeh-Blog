@@ -1,11 +1,11 @@
 ---
-draft: false
+draft: true
 branch: false
 title: About Me
+date: 2024-04-15T08:28:00.000Z
 description: Sam Herring
 tags:
   - servicenow
-thumbnail: featured.jpg
 ---
 
 ## Profile
