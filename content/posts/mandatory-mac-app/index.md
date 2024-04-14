@@ -83,15 +83,25 @@ It's also replaced quite a few applications for me, as it has a lot of the featu
 My mandatories when it comes to Extensions are:
 
 1. Brew
+   - For quick installations/removal of applications via Homebrew 
 2. Calendar + My Schedule
+   - Gives me visibility of my upcoming meetings, and a means to join then from 3 keystrokes
 3. CleanShotX
+   - CleanShotX has a bunch of awesome features, but I always forget the complicated chords to access the shortcuts. This lets me quickly type "OCR" (for example) to access the OCR function of CleanShotX.
 4. Clipboard History
+   - Bound to CMD+SHIFT+V, having all of my clipboard at the ready is extremely useful. 
 5. Color Picker
+   - Seems like a simple one, but being able to quickly identify a specific color for reuse is VERY handy in front-end development. 
 6. MS Teams Meetings
+   - Allows me to manage things like my Microphone and Webcam quickly from Raycast - can also be bound to keyboard shortcuts for global management of device access.
 7. Navigation
-8. Quick Links
-9. Spotify Controls
-10. Timer
+   - Lets me search the menu items of the given window - really handy for accessing hidden or less-used functions without having to leave the home row. 
+8. Spotify Controls
+   - Seems like a no-brainer, but being able to Pause+Skip etc regardless of which keyboard I'm using (some have media controls, other don't) is a godsend. 
+9. Timers
+   - My lil' ADHD brain sometimes need a kick to get going. Timers really helps create the artificial pressure I need to GSD (Get Shit Done). 
+10. Window Management
+   - The creme de la creme of Raycast Features (imho) - completely replaced Rectangle, Swish, etc. and has become *the only* way I manage windows on my device. 
 
 - - -
 
