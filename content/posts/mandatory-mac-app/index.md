@@ -1,6 +1,7 @@
 ---
 showComments: true
 draft: false
+branch: false
 title: Mandatory Mac Applications
 description: The applications I use to GSD
 date: 2024-04-15T08:28:00.000Z
