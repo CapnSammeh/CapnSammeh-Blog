@@ -1,5 +1,4 @@
 ---
-showComments: true
 draft: false
 branch: false
 title: Mandatory Mac Applications

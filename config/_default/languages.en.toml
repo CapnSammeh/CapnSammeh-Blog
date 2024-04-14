@@ -19,7 +19,6 @@ dateFormat = "2 January 2006"
   headline = "General Musings, Techincal Thoughts"
   links = [
     { email = "mailto:samherring111@gmail.com" },
-  #   { dev = "https://dev.to/username" },
     { github = "https://github.com/CapnSammeh" },
     { linkedin = "https://linkedin.com/in/sam-herring" },
   ]

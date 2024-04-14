@@ -13,7 +13,7 @@ paginate = 20
 summaryLength = 30
 
 buildDrafts = false
-buildFuture = false
+buildFuture = true
 
 [comments]
 disqusShortname = 'samherring'
