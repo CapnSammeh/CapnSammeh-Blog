@@ -43,7 +43,7 @@ I read a weird amount of "best apps" lists (there are weirder things to do in yo
 
 These apps are powerhouses straight out of the tin, but can be **extended** to be even more powerful through customisation and configuration. Below are my favourites
 
-### 🆓 [Visual Studio Code](https://code.visualstudio.com/)
+### [Visual Studio Code](https://code.visualstudio.com/) 🆓
 
 VS Code is one of those applications that *everyone* who has anything to do with Web Development recommend. It's fast, has a comprehensive library of plugins, and is seeing regular updates. There are other text-editors out there worth trialing ([Zed](https://zed.dev/) is on my list to check out!), VS Code never fails to disappoint. 
 
@@ -53,11 +53,11 @@ If you're interested in the Plugins I use, check out the [linked section](#VS-Co
 
 - - -
 
-### 🆓❓ [Arc](https://arc.net/)
+### [Arc](https://arc.net/) 🆓❓
 
 Arc has really changed the way I use the browser. I was a Chrome Tab wizard once upon a time, and given the vast majority of my professional work is done in the browser - **having a reliable and fast internet browser is crucial for my wellbeing.**
 
-![](https://res.cloudinary.com/capnsammeh/image/upload/c_scale,f_auto,q_auto,w_400/v1713000334/CleanShot_2024-04-13_at_19.23.35_bx6s72.gif "Arc Browser - Article Inception")
+![](https://res.cloudinary.com/capnsammeh/image/upload/c_scale,f_auto,q_auto,w_400/v1713000334/CleanShot_2024-04-13_at_19.23.35_bx6s72.gif "Arc - Browser Inception")
 
 There are a heap of reasons I use (and recommend!) Arc, but the big ones are:
 
@@ -70,44 +70,62 @@ If you're keen to try out Arc, why not use [my referral code](https://arc.net/gi
 
 - - -
 
-### 🆓 [Raycast]()
+### [Raycast](<>) 🆓
+
+Spotlight search is one of the more highly utilised applications on my device, but since discovering Raycast, it's **completely superseded the native Spotlight Search.** 
+
+Raycast is FAST, it's ***powerful***, and it has a comprehensive suite of Extensions available from within the Store. It's augmented with AI (if you're into that sort of thing), and enables a bunch of my productivity. 
+
+It's also replaced quite a few applications for me, as it has a lot of the features I go to other apps for built in, or available as plugins.
+
+![](https://res.cloudinary.com/capnsammeh/image/upload/c_scale,f_auto,q_auto,w_400/v1713131642/CleanShot_2024-04-15_at_07.52.32_2x_r5uauv.png "Raycast")
+
+My mandatories when it comes to Extensions are:
+
+1. Brew
+2. Calendar + My Schedule
+3. CleanShotX
+4. Clipboard History
+5. Color Picker
+6. MS Teams Meetings
+7. Navigation
+8. Quick Links
+9. Spotify Controls
+10. Timer
 
 - - -
 
-### 🆓❓ [Beeper]()
+### [Beeper](<>) 🆓❓
 
 - - -
 
-### 🆓 [Warp]()
+### [Warp](<>) 🆓
 
 - - -
 
-### 🆓 [Notion]()
+### [Notion](<>) 🆓
 
 - - -
 
 ## Utilities
 
-### 💵/🏪 [Forklift]()
+### [Forklift](<>) 💵/🏪
 
 - - -
 
-### 🆓 [Postman]()
+### [Postman](<>) 🆓
 
+### [Rocket](<>) 💵
 
-### 💵 [Rocket]()
+### [MacMediaKeyForwarder](<>) 🆓
 
-
-### 🆓 [MacMediaKeyForwarder]()
-
-
-### 💵/🏪 [CleanShotX]()
+### [CleanShotX](<>) 💵/🏪
 
 - - -
 
 ## Web Apps
 
-### 🆓🐧 MermaidJS/Mermaid.live
+### MermaidJS/Mermaid.live 🆓🐧
 
 - - -
 
