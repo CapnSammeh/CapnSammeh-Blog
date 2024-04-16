@@ -32,10 +32,19 @@ We're going to upload the following image to ServiceNow to use for custom UI Bui
 
 ![](https://res.cloudinary.com/capnsammeh/image/upload/c_scale,f_auto,q_auto,w_400/v1713166205/CleanShot_2024-04-15_at_17.29.17_2x_leqfhk.png)
 
-5. Click the <> icon that's visible when hovering over the Icon field to tell the platform we want to derive the value of this field from a Script - here, we can simply return the path of the Image we want to reference
+5. Click the <> icon that's visible when hovering over the Icon field to tell the platform we want to derive the value of this field from a Script - here, we can simply return the path of the Image we want to reference (see the code block below):
 
 ![](https://res.cloudinary.com/capnsammeh/image/upload/c_scale,f_auto,q_auto,w_400/v1713166210/CleanShot_2024-04-15_at_17.29.45_2x_kop5xy.png)
 
-```
 
+
+```javascript
+/**
+  * @param {params} params
+  * @param {api} params.api
+  * @param {TransformApiHelpers} params.helpers
+  */
+function evaluateProperty({api, helpers}) {
+	return '/Networking-Manager.png';
+}s
 ```
